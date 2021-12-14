@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/style.493e6e98.css">
+        <script src="/banner.7b98c298.js" type="text/javascript" defer=""></script>
+    </head>
+
+    <body>
+        <title>Installation</title>
+
+        <banner-snippet></banner-snippet>
+
+        <h1>Installation</h1>
+
+        <div class="instructions">
+            <h2>Install Homebrew</h2>
+            <div>
+                <p>Hit command+space on your keyboard then type "Terminal" to open the terminal. Once it is open, paste in the following line, and hit enter.</p>
+                <p class="code">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</p>
+                <p>When it asks for your password, type in your login password and hit enter. Hit enter again when it asks you to.</p>
+                <p>Wait until it is done running before continuing.</p>
+            </div>
+
+            <h2>Install Node.js and NPM</h2>
+            <div>
+                <p>After homebrew is done installing, then copy and paste the following command into your terminal and hit enter.</p>
+                <p class="code">/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</p>
+                <p>Again, type your password and hit enter when necessary.</p>
+                <p>Once that is done running, copy and paste the following command into your terminal and hit enter.</p>
+                <p class="code">brew update</p>
+                <p>Next, copy and paste the following command and hit enter.</p>
+                <p class="code">export PATH="/usr/local/bin:$PATH"</p>
+                <p>And finally, copy and paste the following command and hit enter.</p>
+                <p class="code">brew install node</p>
+            </div>
+
+            <h2>Install Parcel</h2>
+            <div>
+                <p>Last but not least, copy and paste the following command and hit enter.</p>
+                <p class="code">npm install -g parcel-bundler</p>
+                <p>And now everything is installed!</p>
+            </div>
+        </div>
+    </body>
+</html>
