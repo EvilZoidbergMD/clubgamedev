@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 
-const hostname = 'www.clubgamedev.com';
+const hostname = '13.58.233.150';
 const port = 3000;
 
 fs.readFile('./index.html', function (err, html) {
