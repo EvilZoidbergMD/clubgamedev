@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.get('/',(req, res) => res.send('Hello World'));
-app.listen(PORT, () => console.log(`Server listening in port ${PORT}`))
+app.get('/',(req, res) => {
+  res.writeHead(200, { 'content-type': 'text/html' });
+  fs.createReadStream('index.html').pipe(res)
+});
+app.listen(PORT, () => console.log(`Server listening in port ${PORT}`));
