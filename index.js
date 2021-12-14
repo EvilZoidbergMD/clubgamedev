@@ -1,7 +1,8 @@
-var http = require('http');
-var fs = require('fs');
+const http = require('http');
+const fs = require('fs');
 
-const PORT=8080; 
+const hostname = 'www.clubgamedev.com';
+const port = 3000;
 
 fs.readFile('./index.html', function (err, html) {
 
@@ -11,5 +12,6 @@ fs.readFile('./index.html', function (err, html) {
         response.writeHeader(200, {"Content-Type": "text/html"});  
         response.write(html);  
         response.end();  
-    }).listen(PORT);
+    }).listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
 });
