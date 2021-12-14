@@ -9,5 +9,8 @@
     "start": "http-server ../clubgamedev"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
