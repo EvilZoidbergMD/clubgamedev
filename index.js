@@ -3,19 +3,15 @@ const express = require('express');
 const fs = require('fs');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
+//Static Files
 app.use(express.static('static'));
+app.use('/static', express.static(__dirname + 'static'));
 
-
+//Views
 app.get('/', (req, res) => {
-    res.writeHead(200, { 'content-type': 'text/html' });
-    fs.createReadStream('index.html').pipe(res);
+    res.sendFile(__dirname + 'index.html');
 });
 
-app.get('/installation.html', (req, res) => {
-    res.writeHead(200, { 'content-type': 'text/html' });
-    fs.createReadStream('installation.html').pipe(res);
-});
-
-app.listen(PORT, () => console.log(`Server listening in port ${PORT}`));
+app.listen(port, () => console.log(`Server listening in port ${port}`));
