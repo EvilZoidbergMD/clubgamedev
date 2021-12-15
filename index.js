@@ -11,6 +11,11 @@ app.use('/css', express.static(__dirname + 'css'));
 app.use('/js', express.static(__dirname + 'js'));
 app.use('/img', express.static(__dirname + 'img'));
 
+
+app.set('views', './views');
+app.set('view engine', 'ejs');
+
+
 //Views
 app.get('/', (req, res) => {
     res.render('index');
