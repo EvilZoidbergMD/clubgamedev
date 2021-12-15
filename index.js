@@ -19,18 +19,26 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
     res.render('index');
 });
+app.get('/index.html', (req, res) => {
+    res.render('index');
+});
+
 app.get('/installation.html', (req, res) => {
     res.render('installation');
 });
+
 app.get('/coding.html', (req, res) => {
     res.render('coding');
 });
+
 app.get('/art.html', (req, res) => {
     res.render('art');
 });
+
 app.get('/other.html', (req, res) => {
     res.render('other');
 });
+
 app.get('/coding/new-project.html', (req, res) => {
     res.render('new-project');
 });
