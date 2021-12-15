@@ -6,12 +6,14 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 //Static Files
-app.use(express.static('static'));
-app.use('/static', express.static(__dirname + 'static'));
+app.use(express.static('..'));
+app.use('/css', express.static(__dirname + 'css'));
+app.use('/js', express.static(__dirname + 'js'));
+app.use('/img', express.static(__dirname + 'img'));
 
 //Views
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + 'index.html');
+    res.render('index');
 });
 
 app.listen(port, () => console.log(`Server listening in port ${port}`));
