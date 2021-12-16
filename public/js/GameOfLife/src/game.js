@@ -1,5 +1,3 @@
-import Phaser from "../../../../node_modules/phaser"
-
 var config = {
     type: Phaser.AUTO,
     width: 800, //Width of the game window in pixels
