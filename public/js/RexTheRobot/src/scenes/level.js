@@ -1,4 +1,3 @@
-import Phaser from "phaser"
 import Rex from "../entities/rex"
 import InputPanel from "../entities/inputpanel"
 import Tile from "../entities/tile"

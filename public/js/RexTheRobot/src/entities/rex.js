@@ -1,5 +1,3 @@
-import Phaser from "phaser"
-
 class Rex extends Phaser.Physics.Arcade.Sprite {
 
     constructor(scene, x=0, y=0) {
