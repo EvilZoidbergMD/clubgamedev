@@ -30,12 +30,10 @@ function create () {
     }
 
     var tiles = [[]];
-
-    game.camera.x += x_offset;
-    game.camera.y += y_offset;
 }
 
 //Everything that changes during the game goes here
 function update () {
-
+    game.camera.x += x_offset;
+    game.camera.y += y_offset;
 }
