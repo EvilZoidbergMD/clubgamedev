@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/banner.js" type="text/javascript" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser.js"></script>
+    </head>
+
+    <body>
+        <title>Rex the Robot</title>
+
+        <banner-snippet></banner-snippet>
+
+        <h1>Rex the Robot</h1>
+        <div class="instructions">
+            <p>Type instructions then hit run to guide Rex through the maze.</p>
+            <p>Available commands:</p>
+            <p>1. move {direction}: Such as move up, move right, etc.</p>
+            <p>2. wake: Always start the program with wake to wake up.</p>
+            <p>3. sleep: Always end the program with sleep to go back to sleep.</p>
+            <p>4. die: Makes Rex explode. Not useful, but sometimes funny.</p>
+        </div>
+        
+        <script src="../js/RexTheRobot/src/game.js" type="module"></script>
+    </body>
+</html>

@@ -40,6 +40,14 @@ app.get('/examples.html', (req, res) => {
     res.render('examples');
 });
 
+app.get('/examples/rextherobot.html', (req, res) => {
+    res.render('rextherobot');
+});
+
+app.get('/examples/gameoflife.html', (req, res) => {
+    res.render('gameoflife');
+});
+
 app.get('/coding/new-project.html', (req, res) => {
     res.render('new-project');
 });

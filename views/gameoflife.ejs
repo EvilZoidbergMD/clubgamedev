@@ -11,12 +11,18 @@
     </head>
 
     <body>
-        <title>Examples of Games</title>
+        <title>Game of Life</title>
 
         <banner-snippet></banner-snippet>
 
-        <h1><a href="examples/gameoflife.html">Conway's Game of Life</a></h1>
-        <h1><a href="examples/rextherobot.html">Rex the Robot</a></h1>
+        <h1>Conway's Game of Life</h1>
+        <div class="instructions">
+            <p>Click to change between living and dead squares, then hit start to run the game.</p>
+            <p>There are 3 rules to the game of life:</p>
+            <p>1. Any living square with no living neighbors dies of starvation.</p>
+            <p>2. Any living square with more than 3 neighbors dies of overpopulation.</p>
+            <p>3. Any dead square with exactly 3 neighbors comes to life.</p>
+        </div>
         
         <script src="../js/GameOfLife/src/game.js" type="module"></script>
     </body>
