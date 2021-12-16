@@ -90,6 +90,8 @@ function update () {
             timer++;
         }
         else {
+            timer = 0;
+
             for(let x = 0; x < x_size; x++) {
                 for(let y = 0; y < y_size; y++) {
                     let first_total = checkLeft(x, y) + checkRight(x, y) + checkUp(x, y) + checkDown(x, y);
