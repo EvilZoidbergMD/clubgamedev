@@ -30,8 +30,8 @@ var button_y_min = 0;
 
 //Load Images that you want to use here
 function preload () {
-    this.load.image('alive', require('../../../../res/alive.png'));
-    this.load.image('dead', require('../../../../res/dead.png'));
+    this.load.image('alive', '../../../../res/alive.png');
+    this.load.image('dead', '../../../../res/dead.png');
 }
 
 //Create the objects in your game here
