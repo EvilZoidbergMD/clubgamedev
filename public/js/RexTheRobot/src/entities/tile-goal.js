@@ -37,4 +37,4 @@ class GoalTile extends Tile {
         this.triggered = false;
     }
 
-} export default GoalTile
+}

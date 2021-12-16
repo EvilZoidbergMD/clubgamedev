@@ -20,4 +20,4 @@ class WallTile extends Tile {
         
     }
 
-} export default WallTile
+}

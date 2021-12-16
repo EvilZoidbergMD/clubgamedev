@@ -28,4 +28,4 @@ class Tile extends Phaser.Physics.Arcade.Sprite {
         
     }
 
-} export default Tile
+}

@@ -30,4 +30,4 @@ class World1Level3 extends Level {
             this.victorious = true;
         }
     }
-} export default World1Level3
+}

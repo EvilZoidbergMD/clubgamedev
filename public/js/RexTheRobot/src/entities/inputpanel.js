@@ -19,4 +19,4 @@ class InputPanel {
         this.scene.button.onclick = this.onClick;
     }
 
-} export default InputPanel
+}
