@@ -1,5 +1,3 @@
-import Tile from "./tile"
-
 var config = {
     type: Phaser.AUTO,
     width: 800, //Width of the game window in pixels
