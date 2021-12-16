@@ -31,8 +31,8 @@ function create () {
 
     var tiles = [[]];
 
-    this.camera.x += x_offset;
-    this.camera.y += y_offset;
+    game.camera.x += x_offset;
+    game.camera.y += y_offset;
 }
 
 //Everything that changes during the game goes here
