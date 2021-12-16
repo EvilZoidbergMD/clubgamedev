@@ -26,7 +26,10 @@ function preload () {
 function create () {
     //Draw the lines of the grid
     for(let x = 0; x < 1000; x++) {
-        this.add.rectangle(x * tile_size, 0, 3, y_size * tile_size, 0x6666ff);
+        this.add.rectangle((x - x_offset) * tile_size, 0, 3, y_size * tile_size, 0x6666ff);
+    }
+    for(let y = 0; y < 1000; y++) {
+        this.add.rectangle(0, (y - y_offset) * tile_size, x_size * tile_size, 3, 0x6666ff);
     }
 
     var tiles = [[]];
@@ -34,6 +37,5 @@ function create () {
 
 //Everything that changes during the game goes here
 function update () {
-    game.camera.x += x_offset;
-    game.camera.y += y_offset;
+
 }
