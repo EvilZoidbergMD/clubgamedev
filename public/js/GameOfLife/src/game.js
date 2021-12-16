@@ -18,7 +18,7 @@ var tile_size = 32;
 var tiles = [];
 
 var playing = false;
-var timer_amount = 20;
+var timer_amount = 10;
 var timer = 0;
 
 var button = undefined;
