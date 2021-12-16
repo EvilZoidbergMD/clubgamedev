@@ -11,8 +11,8 @@ var config = {
 
 var game = new Phaser.Game(config);
 
-var x_offset = 1000;
-var y_offset = 1000;
+var x_offset = 0;
+var y_offset = 0;
 var x_size = 1000;
 var y_size = 1000;
 var tile_size = 32;
