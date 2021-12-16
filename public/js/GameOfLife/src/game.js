@@ -11,6 +11,12 @@ var config = {
 
 var game = new Phaser.Game(config);
 
+var x_offset = 1000;
+var y_offset = 1000;
+var x_size = 1000;
+var y_size = 1000;
+var tile_size = 32;
+
 //Load Images that you want to use here
 function preload () {
 
@@ -18,9 +24,17 @@ function preload () {
 
 //Create the objects in your game here
 function create () {
-    //Create a rectangle on the screen that is 100 pixels from the left of the screen,
-    //200 pixels from the top of the screen, 50 pixels wide, and 20 pixels tall.
-    this.add.rectangle(100, 200, 50, 20, 0x6666ff);
+    //Draw the lines of the grid
+    for(let x = 0; x < 1000; x++) {
+        this.add.rectangle(x * tile_size, 0, 3, y_size * tile_size, 0x6666ff);
+    }
+
+    var tiles = [[]];
+
+    for int 
+
+    this.camera.x += x_offset;
+    this.camera.y += y_offset;
 }
 
 //Everything that changes during the game goes here
