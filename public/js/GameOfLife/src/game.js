@@ -31,8 +31,6 @@ function create () {
 
     var tiles = [[]];
 
-    for int 
-
     this.camera.x += x_offset;
     this.camera.y += y_offset;
 }
