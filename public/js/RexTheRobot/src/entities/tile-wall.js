@@ -1,5 +1,3 @@
-import Tile from "../entities/tile"
-
 class WallTile extends Tile {
 
     constructor(scene, rex, x, y) {

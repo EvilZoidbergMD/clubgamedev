@@ -1,5 +1,3 @@
-
-
 class Tile extends Phaser.Physics.Arcade.Sprite {
 
     constructor(scene, rex, x, y) {

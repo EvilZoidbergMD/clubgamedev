@@ -1,9 +1,3 @@
-import Rex from "../entities/rex"
-import InputPanel from "../entities/inputpanel"
-import Tile from "../entities/tile"
-import GoalTile from "../entities/tile-goal"
-import WallTile from "../entities/tile-wall"
-
 class Level extends Phaser.Scene {
     constructor(name) {
         super({key: name});

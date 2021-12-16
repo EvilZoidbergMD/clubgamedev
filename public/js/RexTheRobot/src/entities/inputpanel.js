@@ -1,5 +1,3 @@
-
-
 class InputPanel {
 
     constructor(scene, rex, x=825, y=200) {

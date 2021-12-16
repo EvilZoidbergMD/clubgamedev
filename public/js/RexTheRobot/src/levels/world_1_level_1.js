@@ -1,5 +1,3 @@
-import Level from "../scenes/level"
-
 class World1Level1 extends Level {
     constructor() {
         super('world_1_level_1');

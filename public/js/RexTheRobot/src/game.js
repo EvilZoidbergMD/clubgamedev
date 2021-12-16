@@ -1,7 +1,3 @@
-import World1Level1 from "./levels/world_1_level_1"
-import World1Level2 from "./levels/world_1_level_2"
-import World1Level3 from "./levels/world_1_level_3"
-
 var config = {
     type: Phaser.AUTO,
     width: 1000,
