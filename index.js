@@ -9,6 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'css'));
 app.use('/js', express.static(__dirname + 'js'));
+app.use('/res', express.static(__dirname + 'res'));
 
 
 app.set('views', './views');
@@ -35,8 +36,8 @@ app.get('/art.html', (req, res) => {
     res.render('art');
 });
 
-app.get('/other.html', (req, res) => {
-    res.render('other');
+app.get('/examples.html', (req, res) => {
+    res.render('examples');
 });
 
 app.get('/coding/new-project.html', (req, res) => {

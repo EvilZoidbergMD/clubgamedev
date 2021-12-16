@@ -11,6 +11,7 @@ class Banner extends HTMLElement {
             <a href="installation.html" class="banner-item">Installation</a>
             <a href="coding.html" class="banner-item">Coding</a>
             <a href="art.html" class="banner-item">Art</a>
+            <a href="examples.html" class="banner-item">Examples</a>
         </div>
     `;
   }
