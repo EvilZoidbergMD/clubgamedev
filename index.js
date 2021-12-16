@@ -48,6 +48,10 @@ app.get('/examples/gameoflife.html', (req, res) => {
     res.render('gameoflife');
 });
 
+app.get('/examples/examples.html', (req, res) => {
+    res.render('examples');
+});
+
 app.get('/coding/new-project.html', (req, res) => {
     res.render('new-project');
 });
