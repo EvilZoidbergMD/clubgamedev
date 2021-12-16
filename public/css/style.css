@@ -7,8 +7,8 @@
     margin-right: 100px;
 }
 
-.game {
-    margin-left: 200px;
+div.game {
+    margin: 100px;
 }
 
 .banner {
