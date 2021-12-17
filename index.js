@@ -48,7 +48,7 @@ app.get('/gameoflife.html', (req, res) => {
     res.render('gameoflife');
 });
 
-app.get('new-project.html', (req, res) => {
+app.get('/new-project.html', (req, res) => {
     res.render('new-project');
 });
 
